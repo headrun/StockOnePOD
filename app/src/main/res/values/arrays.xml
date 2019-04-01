@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="proof">
+        <item>Aadhar Card</item>
+        <item>Voter Card</item>
+        <item>Acknowledgment Slip</item>
+    </string-array>
+
+    <string-array name="reason">
+        <item>Member not interested</item>
+        <item>Door found lock</item>
+        <item>Member not available</item>
+        <item>Member phone not reachable</item>
+        <item>Others</item>
+    </string-array>
+</resources>

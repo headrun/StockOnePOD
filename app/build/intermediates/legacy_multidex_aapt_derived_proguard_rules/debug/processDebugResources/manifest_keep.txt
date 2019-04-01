@@ -1,0 +1,2 @@
+# Referenced at /Users/suraj/Documents/projects/StockOnePOD/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:45
+-keep class com.stockone.pod.application.MyApplication { <init>(...); }

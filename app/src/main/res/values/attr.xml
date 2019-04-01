@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="LabelTextView">
+        <attr name="caption" format="string"/>
+        <attr name="text" format="string"/>
+        <attr name="hint" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="SwipeRefreshRecyclerView">
+        <attr name="rg_empty_text" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="EmotionView">
+        <attr name="src" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="ReportView">
+        <attr name="title" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="BigButton">
+        <attr name="button_text" format="string"/>
+        <attr name="icon_src" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="HeaderView">
+        <attr name="top_title" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="CustomBtn">
+        <attr name="btn_title" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="WhiteEditText">
+        <attr name="sc_placeholder" format="string"/>
+        <attr name="sc_text" format="string"/>
+    </declare-styleable>
+
+</resources>

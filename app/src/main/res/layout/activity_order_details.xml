@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.pages.OrderDetails">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_order_details"
+        android:background="@color/colorPrimary"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="52dp">
+
+        <TextView
+            android:id="@+id/image_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order Details"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="normal"
+            android:layout_centerVertical="true"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <ImageView
+        android:layout_below="@+id/toolbar_order_details"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:id="@+id/img_order_details"/>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:overScrollMode="never"
+        android:layout_below="@+id/toolbar_order_details"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:paddingTop="20dp"
+            android:paddingBottom="10dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Loan Proposal Id"
+                android:textColor="@color/login_text" />
+            <EditText
+                android:id="@+id/loan_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:clickable="false"
+                android:textColor="@color/grey"
+                android:focusableInTouchMode="false"
+                android:inputType="textPersonName"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Customer name"
+                android:layout_marginTop="6dp"
+                android:textColor="@color/login_text" />
+            <EditText
+                android:id="@+id/order_customer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/grey"
+                android:focusableInTouchMode="false"
+                android:clickable="false"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Model Description"
+                android:layout_marginTop="6dp"
+                android:textColor="@color/login_text" />
+            <EditText
+                android:id="@+id/model_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusableInTouchMode="false"
+                android:textColor="@color/grey"
+                android:inputType="textPostalAddress"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="District"
+                android:layout_marginTop="6dp"
+                android:textColor="@color/login_text" />
+            <EditText
+                android:id="@+id/order_district"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusableInTouchMode="false"
+                android:textColor="@color/grey"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mobile Number"
+                android:layout_marginTop="6dp"
+                android:textColor="@color/login_text" />
+            <EditText
+                android:id="@+id/mob_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:focusableInTouchMode="false"
+                android:textColor="@color/grey"
+                android:inputType="number"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alternate Mobile Number"
+                android:layout_marginTop="6dp"
+                android:textColor="@color/login_text" />
+            <EditText
+                android:id="@+id/alter_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:focusableInTouchMode="false"
+                android:textColor="@color/grey"
+                android:inputType="number"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Serial Number"
+                android:layout_marginTop="6dp"
+                android:textColor="@color/login_text" />
+            <EditText
+                android:id="@+id/serial_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:focusableInTouchMode="false"
+                android:textColor="@color/grey"
+                android:inputType="number"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ID Proof"
+                android:layout_marginTop="6dp"
+                android:textColor="@color/login_text" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/id_type_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="---"
+                android:textSize="18sp"
+                android:layout_marginTop="6dp"
+                android:textColor="@color/grey" />
+
+            <com.weiwangcn.betterspinner.library.BetterSpinner
+                android:id="@+id/spinner1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Select ID Proof"/>
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Aadhar/Voter ID"-->
+                <!--android:textSize="16dp"-->
+                <!--android:textColor="@color/login_text"/>-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/rl_proof"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/border">
+                    <ImageView
+                        android:scaleType="centerCrop"
+                        android:id="@+id/img_id_card"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                    <ImageView
+                        android:id="@+id/img_id_click"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_camera"
+                        android:layout_gravity="center"/>
+                </RelativeLayout>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/scan_qr"
+                    android:visibility="gone"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    app:cardBackgroundColor="@color/green"
+                    app:cardMaxElevation="2dp"
+                    app:contentPadding="8dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Scan Aadhar QR"
+                        android:textColor="@color/white"/>
+
+                </android.support.v7.widget.CardView>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txt_id_proof_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ID Proof Number"
+                android:layout_marginTop="6dp"
+                android:textColor="@color/login_text" />
+            <EditText
+                android:id="@+id/et_id_proof_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/grey"
+                android:hint="ID Proof Number"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/grey"
+                android:layout_margin="12dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Signed Invoice Copy"
+                android:textSize="16dp"
+                android:textColor="@color/login_text"/>
+            <RelativeLayout
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="48dp"
+                android:background="@drawable/border">
+                <ImageView
+                    android:scaleType="centerCrop"
+                    android:id="@+id/img_ackldgmnt_slip"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <ImageView
+                    android:id="@+id/img_ackldgmnt_click"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_camera"
+                    android:layout_gravity="center"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_order_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/login_text"
+        android:text="Submit"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:textSize="18dp"/>
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/btn_order_submitted"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/grey"
+        android:text="Submitted"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:textSize="18dp"/>
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/avi_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_centerInParent="true"
+        style="@style/AVLoadingIndicatorView"
+        android:visibility="visible"
+        app:indicatorName="LineScalePartyIndicator"
+        app:indicatorColor="@color/login_text" />
+
+</RelativeLayout>

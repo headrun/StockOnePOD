@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.pages.OrderList">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_order"
+        android:background="@color/colorPrimary"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="52dp">
+
+        <TextView
+            android:id="@+id/image_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order List"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="normal"
+            android:layout_centerVertical="true"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <ImageView
+        android:layout_below="@+id/toolbar_order"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:id="@+id/img_order"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_order_list"
+        android:overScrollMode="never"
+        android:layout_below="@+id/toolbar_order"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/avi_order_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_centerInParent="true"
+        style="@style/AVLoadingIndicatorView"
+        android:visibility="visible"
+        app:indicatorName="LineScalePartyIndicator"
+        app:indicatorColor="@color/login_text" />
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/avi_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        style="@style/AVLoadingIndicatorView"
+        android:visibility="gone"
+        app:indicatorName="LineScalePartyIndicator"
+        app:indicatorColor="@color/login_text" />
+
+</RelativeLayout>

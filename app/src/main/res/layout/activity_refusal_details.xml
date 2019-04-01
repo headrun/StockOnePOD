@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.pages.RefusalDetails">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_refusal_details"
+        android:background="@color/colorPrimary"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="52dp">
+
+        <TextView
+            android:id="@+id/image_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order Details"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="normal"
+            android:layout_centerVertical="true"/>
+
+
+        <RelativeLayout
+            android:id="@+id/update_order_rl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+            android:background="@color/red">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UPDATE"
+                android:textColor="@color/white"/>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <ImageView
+        android:layout_below="@+id/toolbar_refusal_details"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:id="@+id/img_refusal_details"/>
+
+
+    <LinearLayout
+        android:layout_below="@+id/toolbar_refusal_details"
+        android:paddingTop="20dp"
+        android:paddingBottom="10dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Loan Proposal Id"
+            android:textColor="@color/login_text" />
+        <EditText
+            android:id="@+id/loan_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:clickable="false"
+            android:textColor="@color/grey"
+            android:focusableInTouchMode="false"
+            android:inputType="textPersonName"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Customer name"
+            android:layout_marginTop="6dp"
+            android:textColor="@color/login_text" />
+        <EditText
+            android:id="@+id/order_customer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/grey"
+            android:focusableInTouchMode="false"
+            android:clickable="false"/>
+
+        <TextView
+            android:id="@+id/txt_reason"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reason"
+            android:layout_marginTop="6dp"
+            android:textColor="@color/login_text" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/reason_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="---"
+            android:textSize="18sp"
+            android:layout_marginTop="6dp"
+            android:textColor="@color/grey" />
+
+        <com.weiwangcn.betterspinner.library.BetterSpinner
+            android:id="@+id/spinner_reason"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Select Reason"/>
+
+        <EditText
+            android:id="@+id/et_reason"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginTop="6dp"
+            android:hint="Please mention reason"/>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_refusal_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/login_text"
+        android:text="Submit"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:textSize="18dp"/>
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/btn_refusal_submitted"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/grey"
+        android:text="Submitted"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:textSize="18dp"/>
+
+
+</RelativeLayout>
