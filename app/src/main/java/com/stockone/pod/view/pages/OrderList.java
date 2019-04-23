@@ -20,6 +20,7 @@ import com.blankj.utilcode.util.LogUtils;
 import com.blankj.utilcode.util.NetworkUtils;
 import com.blankj.utilcode.util.ToastUtils;
 import com.bumptech.glide.Glide;
+import com.facebook.shimmer.ShimmerFrameLayout;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.gson.Gson;
@@ -46,6 +47,7 @@ public class OrderList extends AppCompatActivity {
     @BindView(R.id.img_order) ImageView img_order;
     @BindView(R.id.avi_order_list) AVLoadingIndicatorView avi;
     @BindView(R.id.avi_bottom) AVLoadingIndicatorView avi_bottom;
+    @BindView(R.id.shimmer_view) ShimmerFrameLayout shimmer_view;
     private OrderListAdapter adapter;
     private String manifest_number;
     private List<OrderDetails.DataBean> list = new ArrayList<>();
@@ -83,6 +85,8 @@ public class OrderList extends AppCompatActivity {
         recyclerView.setAdapter(adapter);
 
         mDatabase = FirebaseDatabase.getInstance().getReference(Constants.ORDER_DETAILS);
+
+        shimmer_view.startShimmerAnimation();
 
         if (NetworkUtils.isConnected()){
             getOrderDetails(1);
@@ -150,6 +154,8 @@ public class OrderList extends AppCompatActivity {
                 OrderDetails orderDetails = new Gson().fromJson(data, OrderDetails.class);
                 if(page == 1) {
                     adapter.setList(orderDetails.getData());
+                    shimmer_view.stopShimmerAnimation();
+                    shimmer_view.setVisibility(View.GONE);
                 }
                 else{
                     adapter.addOfflineList(orderDetails.getData());
@@ -188,4 +194,9 @@ public class OrderList extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
+    @Override
+    protected void onPause() {
+        super.onPause();
+        shimmer_view.stopShimmerAnimation();
+    }
 }

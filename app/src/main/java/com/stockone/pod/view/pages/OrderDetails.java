@@ -50,13 +50,6 @@ import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.OnProgressListener;
 import com.google.firebase.storage.StorageReference;
-import com.google.firebase.storage.UploadTask;
-import com.google.zxing.BinaryBitmap;
-import com.google.zxing.MultiFormatReader;
-import com.google.zxing.NotFoundException;
-import com.google.zxing.RGBLuminanceSource;
-import com.google.zxing.Result;
-import com.google.zxing.common.HybridBinarizer;
 import com.karumi.dexter.Dexter;
 import com.karumi.dexter.MultiplePermissionsReport;
 import com.karumi.dexter.PermissionToken;
@@ -340,7 +333,7 @@ public class OrderDetails extends AppCompatActivity {
 
             String sStringToParse;
 
-            sStringToParse = new String(result);
+            sStringToParse = result;
 
             DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
             dbf.setValidating(false);
@@ -358,7 +351,10 @@ public class OrderDetails extends AppCompatActivity {
             } catch (SAXException e) {
                 e.printStackTrace();
             }
-            NodeList nlRecords = doc.getElementsByTagName("PrintLetterBarcodeData");
+            NodeList nlRecords = null;
+            if (doc != null) {
+                nlRecords = doc.getElementsByTagName("PrintLetterBarcodeData");
+            }
 
             int num = nlRecords.getLength();
 
@@ -388,14 +384,6 @@ public class OrderDetails extends AppCompatActivity {
                     System.out.println("Found attribute: " + attrName + " with value: " + attrValue);
 
                 }
-//                Attr attr = (Attr) attributes.item(0);
-//                String attrName = attr.getNodeName();
-//
-//                String attrValue = attr.getNodeValue();
-//
-//                LogUtils.e(attrValue);
-//
-//                et_id_proof_no.setText(attrValue);
 
             }
         }

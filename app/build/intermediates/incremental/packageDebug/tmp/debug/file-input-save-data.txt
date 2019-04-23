@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Thu Mar 28 15:23:41 IST 2019
+#Mon Apr 22 17:47:25 IST 2019
 1.base=/Users/suraj/Documents/projects/StockOnePOD/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out
 2.path=classes.dex
 0.baseType=DIRECTORY

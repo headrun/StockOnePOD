@@ -4,6 +4,7 @@ import android.Manifest;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.os.Build;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -12,6 +13,7 @@ import android.util.SparseArray;
 import android.view.MenuItem;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
+import android.view.View;
 
 import com.airbnb.lottie.LottieAnimationView;
 import com.blankj.utilcode.util.LogUtils;
@@ -50,9 +52,11 @@ public class ScanBarcode extends AppCompatActivity {
         getSupportActionBar().setTitle(null);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        lottie.setAnimation("barcode_scanner.json");
-        lottie.loop(true);
-        lottie.playAnimation();
+        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.P) {
+            lottie.setAnimation("barcode_scanner.json");
+            lottie.loop(true);
+            lottie.playAnimation();
+        }
 
         init();
 

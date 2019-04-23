@@ -13,6 +13,7 @@ import android.widget.Toast;
 
 import com.blankj.utilcode.util.LogUtils;
 import com.blankj.utilcode.util.NetworkUtils;
+import com.blankj.utilcode.util.ToastUtils;
 import com.bumptech.glide.Glide;
 import com.flyco.dialog.listener.OnBtnClickL;
 import com.flyco.dialog.widget.NormalDialog;
@@ -379,8 +380,14 @@ public class OrderListAdapter extends RecyclerView.Adapter<OrderListAdapter.View
 
                 }else {
 
-                    viewHolder.pod_status.setText("Pending");
-                    viewHolder.pod_status.setTextColor(context.getResources().getColor(R.color.red));
+                    if (model.isReturned()){
+                        viewHolder.pod_status.setText("Returned");
+                        viewHolder.pod_status.setTextColor(context.getResources().getColor(R.color.orange));
+                        viewHolder.itemView.setOnClickListener(v -> ToastUtils.showLong("Order is already returned"));
+                    }else {
+                        viewHolder.pod_status.setText("Pending");
+                        viewHolder.pod_status.setTextColor(context.getResources().getColor(R.color.red));
+                    }
                 }
             }
 

@@ -5,47 +5,47 @@
     build-mode="FULL"
     density="xxhdpi"
     format="10"
-    plugin-version="3.2.1"
-    timestamp="1553766780164"
+    plugin-version="3.3.2"
+    timestamp="1555941752831"
     token="-8811285090181929528"
     verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="3144" />
+        duration="4293" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="365" />
+        duration="56" />
     <task
         name="verifier"
-        duration="1095" />
+        duration="19" />
 
     <artifact
         location="/Users/suraj/Documents/projects/StockOnePOD/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
         type="SPLIT" />
     <artifact
-        location="/Users/suraj/Documents/projects/StockOnePOD/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
-        type="SPLIT_MAIN" />
-    <artifact
         location="/Users/suraj/Documents/projects/StockOnePOD/app/build/intermediates/resources/instant-run/debug/resources-debug.apk"
         type="SPLIT" />
+    <artifact
+        location="/Users/suraj/Documents/projects/StockOnePOD/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
+        type="SPLIT_MAIN" />
 
     <build
         build-mode="FULL"
-        timestamp="1553766780164"
+        timestamp="1555941752831"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="/Users/suraj/Documents/projects/StockOnePOD/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/suraj/Documents/projects/StockOnePOD/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
-            type="SPLIT_MAIN" />
-        <artifact
             location="/Users/suraj/Documents/projects/StockOnePOD/app/build/intermediates/resources/instant-run/debug/resources-debug.apk"
             type="SPLIT" />
+        <artifact
+            location="/Users/suraj/Documents/projects/StockOnePOD/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
+            type="SPLIT_MAIN" />
     </build>
 
 </instant-run>
