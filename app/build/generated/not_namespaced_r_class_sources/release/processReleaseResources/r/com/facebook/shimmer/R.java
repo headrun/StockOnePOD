@@ -20,13 +20,13 @@ public final class R {
         public static final int fixed_height = 0x7f0400e1;
         public static final int fixed_width = 0x7f0400e2;
         public static final int intensity = 0x7f040113;
-        public static final int relative_height = 0x7f0401a6;
-        public static final int relative_width = 0x7f0401a7;
-        public static final int repeat_count = 0x7f0401a8;
-        public static final int repeat_delay = 0x7f0401a9;
-        public static final int repeat_mode = 0x7f0401aa;
-        public static final int shape = 0x7f0401ba;
-        public static final int tilt = 0x7f04021f;
+        public static final int relative_height = 0x7f0401aa;
+        public static final int relative_width = 0x7f0401ab;
+        public static final int repeat_count = 0x7f0401ac;
+        public static final int repeat_delay = 0x7f0401ad;
+        public static final int repeat_mode = 0x7f0401ae;
+        public static final int shape = 0x7f0401be;
+        public static final int tilt = 0x7f040223;
     }
     public static final class id {
         private id() {}
@@ -43,7 +43,7 @@ public final class R {
     public static final class styleable {
         private styleable() {}
 
-        public static final int[] ShimmerFrameLayout = { 0x7f040029, 0x7f040032, 0x7f04003b, 0x7f0400c1, 0x7f0400c2, 0x7f0400e1, 0x7f0400e2, 0x7f040113, 0x7f0401a6, 0x7f0401a7, 0x7f0401a8, 0x7f0401a9, 0x7f0401aa, 0x7f0401ba, 0x7f04021f };
+        public static final int[] ShimmerFrameLayout = { 0x7f040029, 0x7f040032, 0x7f04003b, 0x7f0400c1, 0x7f0400c2, 0x7f0400e1, 0x7f0400e2, 0x7f040113, 0x7f0401aa, 0x7f0401ab, 0x7f0401ac, 0x7f0401ad, 0x7f0401ae, 0x7f0401be, 0x7f040223 };
         public static final int ShimmerFrameLayout_angle = 0;
         public static final int ShimmerFrameLayout_auto_start = 1;
         public static final int ShimmerFrameLayout_base_alpha = 2;

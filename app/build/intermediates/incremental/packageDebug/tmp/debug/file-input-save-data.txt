@@ -1,15 +1,19 @@
 #Internal package file, do not edit.
-#Mon Apr 22 17:47:25 IST 2019
-1.base=/Users/suraj/Documents/projects/StockOnePOD/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out
+#Fri May 17 10:46:34 IST 2019
+1.base=/Users/suraj/Documents/projects/StockOnePOD/app/build/intermediates/transforms/dexMerger/debug/0
 2.path=classes.dex
 0.baseType=DIRECTORY
-2.base=/Users/suraj/Documents/projects/StockOnePOD/app/build/intermediates/transforms/dexMerger/debug/1
+3.baseType=DIRECTORY
+2.base=/Users/suraj/Documents/projects/StockOnePOD/app/build/intermediates/transforms/dexMerger/debug/0
+3.set=ASSET
 2.set=DEX
 1.baseType=DIRECTORY
-count=3
-1.set=ASSET
+3.path=barcode_scanner.json
+count=4
+1.set=DEX
 0.path=truck.json
+3.base=/Users/suraj/Documents/projects/StockOnePOD/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out
 0.set=ASSET
 0.base=/Users/suraj/Documents/projects/StockOnePOD/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out
 2.baseType=DIRECTORY
-1.path=barcode_scanner.json
+1.path=classes2.dex

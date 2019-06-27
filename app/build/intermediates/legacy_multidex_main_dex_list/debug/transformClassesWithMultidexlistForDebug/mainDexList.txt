@@ -178,6 +178,7 @@ butterknife/Optional.class
 butterknife/internal/ListenerClass$NONE.class
 butterknife/internal/ListenerClass.class
 butterknife/internal/ListenerMethod.class
+com/airbnb/lottie/LottieDrawable$RepeatMode.class
 com/android/volley/RequestQueue.class
 com/androidnetworking/AndroidNetworking.class
 com/blankj/utilcode/constant/MemoryConstants$Unit.class

@@ -55,7 +55,7 @@ public class RefusalDetails extends AppCompatActivity {
     @BindView(R.id.reason_text) TextView reason_text;
     @BindView(R.id.txt_reason) TextView txt_reason;
     @BindView(R.id.btn_refusal_submitted) Button btn_refusal_submitted;
-    @BindView(R.id.update_order_rl) RelativeLayout update_order_rl;
+//    @BindView(R.id.update_order_rl) RelativeLayout update_order_rl;
 
     String loan_id, customer_name, model_desc, district, serial_no,
             manifest_number, id_type, id_card, signed_invoice_copy, id_proof_number = "";
@@ -143,16 +143,17 @@ public class RefusalDetails extends AppCompatActivity {
             btn_refusal_submitted.setVisibility(View.VISIBLE);
             reason_text.setVisibility(View.VISIBLE);
             spinner_reason.setVisibility(View.GONE);
-            update_order_rl.setVisibility(View.GONE);
-        }else {
-
-            update_order_rl.setVisibility(View.VISIBLE);
-            btn_refusal_submit.setVisibility(View.VISIBLE);
-            btn_refusal_submitted.setVisibility(View.GONE);
-            reason_text.setVisibility(View.VISIBLE);
-            spinner_reason.setVisibility(View.VISIBLE);
-            spinner_reason.setHint("Update Reason");
+//            update_order_rl.setVisibility(View.GONE);
         }
+//        else {
+//
+////            update_order_rl.setVisibility(View.VISIBLE);
+//            btn_refusal_submit.setVisibility(View.VISIBLE);
+//            btn_refusal_submitted.setVisibility(View.GONE);
+//            reason_text.setVisibility(View.VISIBLE);
+//            spinner_reason.setVisibility(View.VISIBLE);
+//            spinner_reason.setHint("Update Reason");
+//        }
 
     }
 
@@ -252,16 +253,23 @@ public class RefusalDetails extends AppCompatActivity {
 
                 if (dataSnapshot.getValue() != null){
 
-                    if (dataSnapshot.child("refusal").getValue().equals(false)){
+//                    if (dataSnapshot.child("refusal").getValue().equals(false)){
+//
+////                        update_order_rl.setVisibility(View.GONE);
+//                        btn_refusal_submit.setVisibility(View.GONE);
+//                        btn_refusal_submitted.setVisibility(View.VISIBLE);
+//                        btn_refusal_submitted.setText("Order Accepted");
+//                        reason_text.setVisibility(View.GONE);
+//                        spinner_reason.setVisibility(View.GONE);
+//                        txt_reason.setVisibility(View.GONE);
+//                    }
 
-                        update_order_rl.setVisibility(View.GONE);
-                        btn_refusal_submit.setVisibility(View.GONE);
-                        btn_refusal_submitted.setVisibility(View.VISIBLE);
-                        btn_refusal_submitted.setText("Order Accepted");
-                        reason_text.setVisibility(View.GONE);
-                        spinner_reason.setVisibility(View.GONE);
-                        txt_reason.setVisibility(View.GONE);
-                    }
+                    btn_refusal_submit.setVisibility(View.GONE);
+                    btn_refusal_submitted.setVisibility(View.VISIBLE);
+//                    btn_refusal_submitted.setText("Order Accepted");
+                    reason_text.setVisibility(View.VISIBLE);
+                    spinner_reason.setVisibility(View.GONE);
+                    txt_reason.setVisibility(View.VISIBLE);
 
                     reason_text.setText(dataSnapshot.child("refusal_reason").getValue()+"");
 
@@ -271,7 +279,7 @@ public class RefusalDetails extends AppCompatActivity {
                     btn_refusal_submitted.setVisibility(View.GONE);
                     reason_text.setVisibility(View.GONE);
                     spinner_reason.setVisibility(View.VISIBLE);
-                    update_order_rl.setVisibility(View.GONE);
+//                    update_order_rl.setVisibility(View.GONE);
                 }
             }
 
@@ -282,13 +290,13 @@ public class RefusalDetails extends AppCompatActivity {
         });
     }
 
-    @OnClick(R.id.update_order_rl)
-    void onUpdateOrderClicked(){
-
-        ActivityManager.OrderDetails(this, loan_id, customer_name, model_desc,
-                district, mob_no, alt_mob_no,
-                serial_no, manifest_number, id_type, id_card,
-                signed_invoice_copy, id_proof_number, position, true);
-    }
+//    @OnClick(R.id.update_order_rl)
+//    void onUpdateOrderClicked(){
+//
+//        ActivityManager.OrderDetails(this, loan_id, customer_name, model_desc,
+//                district, mob_no, alt_mob_no,
+//                serial_no, manifest_number, id_type, id_card,
+//                signed_invoice_copy, id_proof_number, position, true);
+//    }
 
 }

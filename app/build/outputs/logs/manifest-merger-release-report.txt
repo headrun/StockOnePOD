@@ -7,7 +7,7 @@ INJECTED from /Users/suraj/Documents/projects/StockOnePOD/app/src/main/AndroidMa
 MERGED from [com.karumi:dexter:4.1.0] /Users/suraj/.gradle/caches/transforms-1/files-1.1/dexter-4.1.0.aar/cf03a261f0680de914c7d56275f0df3c/AndroidManifest.xml:17:1-33:12
 MERGED from [com.android.support:design:28.0.0] /Users/suraj/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/c28af4f418dba6de9a40ad57d52baf1b/AndroidManifest.xml:17:1-24:12
 MERGED from [com.github.MdFarhanRaja:SearchableSpinner:1.2] /Users/suraj/.gradle/caches/transforms-1/files-1.1/SearchableSpinner-1.2.aar/0c01744e6459fe33da014fa0a84671ad/AndroidManifest.xml:2:1-17:12
-MERGED from [com.airbnb.android:lottie:2.2.0] /Users/suraj/.gradle/caches/transforms-1/files-1.1/lottie-2.2.0.aar/4b3f6300816d5cd25a04c0110ec5bccc/AndroidManifest.xml:2:1-12:12
+MERGED from [com.airbnb.android:lottie:2.6.1] /Users/suraj/.gradle/caches/transforms-1/files-1.1/lottie-2.6.1.aar/41941519f161b3497f112d04f092c575/AndroidManifest.xml:2:1-13:12
 MERGED from [com.amitshekhar.android:android-networking:1.0.2] /Users/suraj/.gradle/caches/transforms-1/files-1.1/android-networking-1.0.2.aar/c33c3bd7b94e8f618fe3d92d675998c0/AndroidManifest.xml:18:1-27:12
 MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/suraj/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/a3a3c7b9db3c7907aa61b3a84ef34460/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/suraj/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/39b3b1da34e6a79f3f88cbea19b6d5f3/AndroidManifest.xml:2:1-11:12
@@ -147,8 +147,8 @@ MERGED from [com.android.support:design:28.0.0] /Users/suraj/.gradle/caches/tran
 MERGED from [com.android.support:design:28.0.0] /Users/suraj/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/c28af4f418dba6de9a40ad57d52baf1b/AndroidManifest.xml:22:5-20
 MERGED from [com.github.MdFarhanRaja:SearchableSpinner:1.2] /Users/suraj/.gradle/caches/transforms-1/files-1.1/SearchableSpinner-1.2.aar/0c01744e6459fe33da014fa0a84671ad/AndroidManifest.xml:11:5-15:19
 MERGED from [com.github.MdFarhanRaja:SearchableSpinner:1.2] /Users/suraj/.gradle/caches/transforms-1/files-1.1/SearchableSpinner-1.2.aar/0c01744e6459fe33da014fa0a84671ad/AndroidManifest.xml:11:5-15:19
-MERGED from [com.airbnb.android:lottie:2.2.0] /Users/suraj/.gradle/caches/transforms-1/files-1.1/lottie-2.2.0.aar/4b3f6300816d5cd25a04c0110ec5bccc/AndroidManifest.xml:10:5-20
-MERGED from [com.airbnb.android:lottie:2.2.0] /Users/suraj/.gradle/caches/transforms-1/files-1.1/lottie-2.2.0.aar/4b3f6300816d5cd25a04c0110ec5bccc/AndroidManifest.xml:10:5-20
+MERGED from [com.airbnb.android:lottie:2.6.1] /Users/suraj/.gradle/caches/transforms-1/files-1.1/lottie-2.6.1.aar/41941519f161b3497f112d04f092c575/AndroidManifest.xml:11:5-20
+MERGED from [com.airbnb.android:lottie:2.6.1] /Users/suraj/.gradle/caches/transforms-1/files-1.1/lottie-2.6.1.aar/41941519f161b3497f112d04f092c575/AndroidManifest.xml:11:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/suraj/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/39b3b1da34e6a79f3f88cbea19b6d5f3/AndroidManifest.xml:9:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/suraj/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/39b3b1da34e6a79f3f88cbea19b6d5f3/AndroidManifest.xml:9:5-20
 MERGED from [com.google.firebase:firebase-core:16.0.8] /Users/suraj/.gradle/caches/transforms-1/files-1.1/firebase-core-16.0.8.aar/541117c1beb53a7fb645d32dde820a65/AndroidManifest.xml:7:5-20
@@ -331,8 +331,8 @@ MERGED from [com.android.support:design:28.0.0] /Users/suraj/.gradle/caches/tran
 MERGED from [com.android.support:design:28.0.0] /Users/suraj/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/c28af4f418dba6de9a40ad57d52baf1b/AndroidManifest.xml:20:5-44
 MERGED from [com.github.MdFarhanRaja:SearchableSpinner:1.2] /Users/suraj/.gradle/caches/transforms-1/files-1.1/SearchableSpinner-1.2.aar/0c01744e6459fe33da014fa0a84671ad/AndroidManifest.xml:7:5-9:41
 MERGED from [com.github.MdFarhanRaja:SearchableSpinner:1.2] /Users/suraj/.gradle/caches/transforms-1/files-1.1/SearchableSpinner-1.2.aar/0c01744e6459fe33da014fa0a84671ad/AndroidManifest.xml:7:5-9:41
-MERGED from [com.airbnb.android:lottie:2.2.0] /Users/suraj/.gradle/caches/transforms-1/files-1.1/lottie-2.2.0.aar/4b3f6300816d5cd25a04c0110ec5bccc/AndroidManifest.xml:6:5-8:41
-MERGED from [com.airbnb.android:lottie:2.2.0] /Users/suraj/.gradle/caches/transforms-1/files-1.1/lottie-2.2.0.aar/4b3f6300816d5cd25a04c0110ec5bccc/AndroidManifest.xml:6:5-8:41
+MERGED from [com.airbnb.android:lottie:2.6.1] /Users/suraj/.gradle/caches/transforms-1/files-1.1/lottie-2.6.1.aar/41941519f161b3497f112d04f092c575/AndroidManifest.xml:7:5-9:41
+MERGED from [com.airbnb.android:lottie:2.6.1] /Users/suraj/.gradle/caches/transforms-1/files-1.1/lottie-2.6.1.aar/41941519f161b3497f112d04f092c575/AndroidManifest.xml:7:5-9:41
 MERGED from [com.amitshekhar.android:android-networking:1.0.2] /Users/suraj/.gradle/caches/transforms-1/files-1.1/android-networking-1.0.2.aar/c33c3bd7b94e8f618fe3d92d675998c0/AndroidManifest.xml:23:5-25:41
 MERGED from [com.amitshekhar.android:android-networking:1.0.2] /Users/suraj/.gradle/caches/transforms-1/files-1.1/android-networking-1.0.2.aar/c33c3bd7b94e8f618fe3d92d675998c0/AndroidManifest.xml:23:5-25:41
 MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/suraj/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/a3a3c7b9db3c7907aa61b3a84ef34460/AndroidManifest.xml:20:5-44

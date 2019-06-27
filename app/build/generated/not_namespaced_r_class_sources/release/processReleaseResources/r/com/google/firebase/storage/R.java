@@ -26,7 +26,7 @@ public final class R {
         public static final int fontWeight = 0x7f0400ee;
         public static final int imageAspectRatio = 0x7f04010b;
         public static final int imageAspectRatioAdjust = 0x7f04010c;
-        public static final int scopeUris = 0x7f0401b0;
+        public static final int scopeUris = 0x7f0401b4;
     }
     public static final class bool {
         private bool() {}
@@ -157,7 +157,7 @@ public final class R {
         public static final int text2 = 0x7f09010a;
         public static final int time = 0x7f090114;
         public static final int title = 0x7f090115;
-        public static final int wide = 0x7f090133;
+        public static final int wide = 0x7f090132;
     }
     public static final class integer {
         private integer() {}
@@ -234,7 +234,7 @@ public final class R {
         public static final int FontFamily_fontProviderFetchTimeout = 3;
         public static final int FontFamily_fontProviderPackage = 4;
         public static final int FontFamily_fontProviderQuery = 5;
-        public static final int[] FontFamilyFont = { 0x1010532, 0x1010533, 0x101053f, 0x101056f, 0x1010570, 0x7f0400e4, 0x7f0400ec, 0x7f0400ed, 0x7f0400ee, 0x7f040237 };
+        public static final int[] FontFamilyFont = { 0x1010532, 0x1010533, 0x101053f, 0x101056f, 0x1010570, 0x7f0400e4, 0x7f0400ec, 0x7f0400ed, 0x7f0400ee, 0x7f04023b };
         public static final int FontFamilyFont_android_font = 0;
         public static final int FontFamilyFont_android_fontWeight = 1;
         public static final int FontFamilyFont_android_fontStyle = 2;
@@ -249,7 +249,7 @@ public final class R {
         public static final int LoadingImageView_circleCrop = 0;
         public static final int LoadingImageView_imageAspectRatio = 1;
         public static final int LoadingImageView_imageAspectRatioAdjust = 2;
-        public static final int[] SignInButton = { 0x7f04005a, 0x7f040098, 0x7f0401b0 };
+        public static final int[] SignInButton = { 0x7f04005a, 0x7f040098, 0x7f0401b4 };
         public static final int SignInButton_buttonSize = 0;
         public static final int SignInButton_colorScheme = 1;
         public static final int SignInButton_scopeUris = 2;

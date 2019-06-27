@@ -2,7 +2,6 @@ package com.stockone.pod.view.pages;
 
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
-import android.graphics.Color;
 import android.graphics.Paint;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
@@ -70,6 +69,7 @@ public class MainActivity extends AppCompatActivity {
 
         text_update.setPaintFlags(text_update.getPaintFlags() | Paint.UNDERLINE_TEXT_FLAG);
 
+//        HyperTrack.initialize(this, "pgLE7q0sad98SRP8eNhTv7O8v93O6_zK7gq8Ws7DebJIkqupB5msmWiZaUJ1akds6R_QDZtR6rrgAWG4E6qwXg");
 
     }
 
@@ -90,6 +90,9 @@ public class MainActivity extends AppCompatActivity {
         } catch (PackageManager.NameNotFoundException e) {
             e.printStackTrace();
         }
+
+//        HyperTrack.enableDebugLogging();
+//        HyperTrack.setNameAndMetadataForDevice("Suraj", Collections.emptyMap());
     }
 
     @OnClick(R.id.search_manifest)

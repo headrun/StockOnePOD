@@ -8,7 +8,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 import butterknife.Unbinder;
 import butterknife.internal.DebouncingOnClickListener;
@@ -22,8 +21,6 @@ public class RefusalDetails_ViewBinding implements Unbinder {
   private RefusalDetails target;
 
   private View view2131296308;
-
-  private View view2131296557;
 
   @UiThread
   public RefusalDetails_ViewBinding(RefusalDetails target) {
@@ -53,15 +50,6 @@ public class RefusalDetails_ViewBinding implements Unbinder {
     target.reason_text = Utils.findRequiredViewAsType(source, R.id.reason_text, "field 'reason_text'", TextView.class);
     target.txt_reason = Utils.findRequiredViewAsType(source, R.id.txt_reason, "field 'txt_reason'", TextView.class);
     target.btn_refusal_submitted = Utils.findRequiredViewAsType(source, R.id.btn_refusal_submitted, "field 'btn_refusal_submitted'", Button.class);
-    view = Utils.findRequiredView(source, R.id.update_order_rl, "field 'update_order_rl' and method 'onUpdateOrderClicked'");
-    target.update_order_rl = Utils.castView(view, R.id.update_order_rl, "field 'update_order_rl'", RelativeLayout.class);
-    view2131296557 = view;
-    view.setOnClickListener(new DebouncingOnClickListener() {
-      @Override
-      public void doClick(View p0) {
-        target.onUpdateOrderClicked();
-      }
-    });
   }
 
   @Override
@@ -81,11 +69,8 @@ public class RefusalDetails_ViewBinding implements Unbinder {
     target.reason_text = null;
     target.txt_reason = null;
     target.btn_refusal_submitted = null;
-    target.update_order_rl = null;
 
     view2131296308.setOnClickListener(null);
     view2131296308 = null;
-    view2131296557.setOnClickListener(null);
-    view2131296557 = null;
   }
 }

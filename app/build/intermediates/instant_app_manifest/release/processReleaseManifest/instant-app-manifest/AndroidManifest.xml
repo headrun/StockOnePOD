@@ -2,11 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.stockone.pod"
     android:targetSandboxVersion="2"
-    android:versionCode="24"
-    android:versionName="3.3" >
+    android:versionCode="25"
+    android:versionName="3.4" >
 
     <uses-sdk
-        android:minSdkVersion="17"
+        android:minSdkVersion="19"
         android:targetSdkVersion="28" />
 
     <uses-permission android:name="android.permission.INTERNET" />

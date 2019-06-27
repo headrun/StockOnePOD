@@ -22,6 +22,10 @@ allprojects {
         google()
         jcenter()
         maven { url "https://jitpack.io" }
+//        maven {
+//            name 'hypertrack'
+//            url 'http://m2.hypertrack.com'
+//        }
     }
 }
 
